@@ -1,0 +1,23 @@
+{
+  "name": "kylin987/orm-redis-cache",
+  "description": "Fixed-record Redis cache with mutual invalidation for Eloquent, Webman ThinkORM and ThinkPHP",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/kylin987/orm-redis-cache",
+  "support": {
+    "source": "https://github.com/kylin987/orm-redis-cache",
+    "issues": "https://github.com/kylin987/orm-redis-cache/issues"
+  },
+  "require": {"php": ">=8.1", "ext-json": "*"},
+  "suggest": {
+    "webman/database": "For Webman Eloquent (^2.1 with Illuminate ^10.48)",
+    "illuminate/database": "For Eloquent (^10.48 only)",
+    "illuminate/events": "For Eloquent model events (^10.48)",
+    "webman/redis": "For either Webman adapter (^2.1)",
+    "webman/think-orm": "For Webman ThinkORM (^1.1 or ^2.0)",
+    "topthink/framework": "For ThinkPHP (^6.0 or ^8.0, with ThinkORM 3/4)",
+    "ext-redis": "Recommended Redis client; standalone phpredis tested"
+  },
+  "autoload": {"psr-4": {"Kylin987\\Orm\\RedisCache\\": "src/"}},
+  "scripts": {"test": "php tests/run.php"}
+}
